@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short cut icon" type="x.icon" href="./u1.png">
+    <title> Umai | Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<!--body section-->
+
+<body>
+    <!-- Navbar_Section -->
+    <div class="navbar">
+        <div class="navbar__left">
+            <p><a href="#profile-text" class="scroll-link-home"> HOME </a> </p>
+            <p><a href="#about-section" class="scroll-link-about"> ABOUT </a></p>
+            <p><a href="#connect_page" class="scroll-link-connect"> CONNECT </a></p>
+            <p><a href="#certificate_page" class="scroll-link-certifiactes"> CERTIFICATES </a></p>
+        </div>
+
+        <div class="navbar__right">
+
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user" id="user-icon"></i>
+            <img src="./moon.png" id="icon">
+        </div>
+    </div>
+
+    <!-- scroll up button -->
+    <button id="scrollToTopBtn" title="Go to top"> <i class="fa-solid fa-circle-up"
+            style="color: #ff2445;"></i></button>
+
+
+    <!--Script for dark and light theme-->
+    <script>
+
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "./sun.png";
+            } else {
+                icon.src = "./moon.png";
+            }
+        }
+
+    </script>
+
+
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Profile Image and Name -->
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="./profile-pic (2).png" alt="Photo">
+            </div>
+
+            <div class="profile-text">
+                <h2>Hello, my name is <span class="name"> UMAIORUBAGAN </span></h2>
+                <h3> I'm a Entry-Level Software Engineer</h3>
+            </div>
+
+
+        </div>
+
+        <!-- Introduction_Section -->
+
+        <!--animation_image-->
+
+
+        <!--details section-->
+
+        <div class="details-section">
+
+            <div class="animatin_container">
+
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+                <dotlottie-player src="https://lottie.host/1462235a-f971-4962-b2fd-2ba3ff3c1c92/ngRVtnF37U.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                    autoplay></dotlottie-player>
+            </div>
+
+
+            <h3> All <span class="name_design">About</span> Me And My <span class="name_design">Experience</span></h3>
+
+            <p>&#x2022; I am a final-year Electronics and Communication Engineering student with a passion for the
+                software industry.</p>
+            <p>&#x2022; I am actively seeking opportunities to apply my technical skills and academic knowledge to drive
+                software innovation.</p>
+            <p>&#x2022; Skilled in Python, HTML, CSS, Embedded Systems and Basic Machine learning.</p>
+            <P>&#x2022; Experienced in using Git and GitHub for version control and collaborative projects.</P>
+            <P>&#x2022; My commitment to continuous learning and making a positive impact makes me a strong candidate.
+            </P>
+
+
+            <!--resume pdf is here-->
+            <h4><a href="./Resume_profile pdf.pdf" target="_blank" class="resume"><i class="fa-solid fa-file"></i>
+                    Download Resume</a></h4>
+        </div>
+    </div>
+
+    <!-- Portfolio_Section -->
+    <div class="portfolio-section">
+        <h2> My Creative <span class="highlight">Portfolio</span> Section</h2>
+
+        <div class="project-container">
+            <!-- Project Card -->
+            <div class="project-card">
+                <img class="udemy_img" src="./udemy clone img.PNG" alt="Udemy Clone">
+                <h3> Udemy clone </h3>
+                <p> For my project, I created a Udemy clone website using HTML5 and CSS. The goal was to copy the main
+                    features and design of Udemy, a popular online learning platform, to provide a similar user
+                    experience.</p>
+
+                <h5>Tech Stack: <p class="para_format"> HTML, CSS, JavaScript </p>
+                </h5>
+                <div class="udemy_git"><a href="https://umaiorubagan08.github.io/updated-udemy-clone-webpage/"> <i
+                            class="fa-brands fa-github" style="color: #000000;"></i> </a></div>
+            </div>
+
+            <!-- Project Card -->
+            <div class="project-card">
+                <img class="food_img" src="./food bg.PNG" alt="Food Website">
+                <h3> Food Website </h3>
+                <p> I made a restaurant website using HTML5 and CSS. The goal was to create a simple and attractive site
+                    for a restaurant. The website shows the menu, location, and contact information.</p>
+                <h5>Tech Stack: <p class="para_format"> HTML, CSS, JavaScript </p>
+                </h5>
+                <div class="food_git"><a href="https://umaiorubagan08.github.io/Food-website/"> <i
+                            class="fa-brands fa-github" style="color: #000000;"></i> </a></div>
+            </div>
+
+            <!-- Project Card -->
+            <div class="project-card">
+                <img class="bot_img" src="./chat bot.webp" alt="Telegram-Chat-Bot">
+                <h3> Chat Bot</h3>
+                <p> I developed a Telegram chat bot using Python. The goal was to create a bot that can interact with
+                    users on Telegram, providing responses and performing tasks based on our commands.</p>
+                <h5>Tech Stack: <p class="para_format"> Python, Libraries, IDE, API Keys </p>
+                </h5>
+                <div class="bot_git"><a href="https://umaiorubagan08.github.io/updated-udemy-clone-webpage/"> <i
+                            class="fa-brands fa-github" style="color: #000000;"></i> </a></div>
+            </div>
+
+            <!-- Project Card -->
+            <div class="project-card">
+                <img class="auto_img" src="./auto.png" alt="Automatic-fault-detection-in-street-lights">
+                <h3> AFDISL System </h3>
+                <p> I developed a prototype using an Arduino UNO board along with components like an LCD display, LED
+                    lights, an LDR sensor, and an Ultrasonic sensor. The goal was to create a
+                    basic automated system that responds to its environment.</p>
+                <h5>Hardware Prototype: <p class="para_format"> Arduino UNO Board, LCD Display, LED Lights, LDR &
+                        Ultrasonic Sensor</p>
+                </h5>
+                <div class="AFDISL_system_git"><a
+                        href="https://github.com/Umaiorubagan08/Automatic-Fault-Detection-in-Street-Lights"> <i
+                            class="fa-brands fa-github" style="color: #000000;"></i> </a></div>
+            </div>
+
+            <div class="project-card">
+                <img class="chatbot_img" src="./health_bot.PNG" alt="mental-health-Chat-Bot">
+                <h3> Health Bot</h3>
+                <p> I developed a Mental Health chat bot using GitHub and Python. The goal was to create a bot that can
+                    interact with users, providing support and resources related to mental health and performing tasks
+                    based on our commands.</p>
+                <h5>Tech Stack: <p class="para_format"> Python, Libraries, IDE, (NLP) Tools, Mental Health Resources</p>
+                    <div class="health_git"><a href="https://github.com/Umaiorubagan08/Python_mental_health_chat_bot.">
+                            <i class="fa-brands fa-github" style="color: #000000;"></i> </a></div>
+            </div>
+
+            <div class="project-card">
+                <img class="car_detection" src="./car detection.PNG" alt="car-detection">
+                <h3>AI Parking System</h3>
+                <p> I developed an AI-enabled car parking system using Python and a wrapper package for OpenCV Python
+                    bindings. The project aimed to create a smart parking solution that uses computer vision to assist
+                    drivers in parking their vehicles accurately.
+                </p>
+                <h5>Tech Stack: <p class="para_format"> Python, Libraries like OpenCV, IDE, AI and ML Tools </p>
+                    <div class="AI_git"><a
+                            href="https://github.com/naanmudhalvan-SI/PBL-NT-GP--20099-1682659072/tree/main/Final%20Deliverables/Project%20For%20AI%20Enabled%20Car%20Parking%20">
+                            <i class="fa-brands fa-github" style="color: #000000;"></i> </a></div>
+            </div>
+
+            <div class="project-card">
+                <img class="car_detection_web" src="./car website.PNG" alt="car-detection_website login">
+                <h3>AIECPS Webpage</h3>
+                <p> I developed a login webpage for an AI-enabled car parking system using basic HTML and basic CSS. The
+                    goal was to create a simple interface where users can log in securely to access features related to
+                    the car parking system.</p>
+                <h5>Tech Stack: <p class="para_format"> HTML 5, CSS 3, VS Code</p>
+                    <div class="webpage_git"><a href="https://umaiorubagan08.github.io/AI-enabled-website/"> <i
+                                class="fa-brands fa-github" style="color: #000000;"></i> </a></div>
+            </div>
+
+            <div class="project-card">
+                <img class="resume_img" src="./cv.png" alt="resume_img">
+                <h3> Portfolio </h3>
+                <p> I created a resume portfolio webpage using HTML5 and CSS. The goal was to showcase my skills,
+                    qualifications, and work experience in a visually appealing and organized manner on a web platform.
+                </p>
+                <h5>Tech Stack: <p class="para_format"> Basic HTML, Basic CSS , VS Code</p>
+                    <div class="resume_git"><a href="https://umaiorubagan08.github.io/Resume-portfolio/"> <i
+                                class="fa-brands fa-github" style="color: #000000;"></i> </a></div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <!--About section-->
+    <div class="about" id="about-section">
+        <h1> SKILL <span class="name_design"> SET </span> </h1>
+    </div>
+
+
+    <!-- Skills_Section -->
+
+
+    <div class="skills_container">
+
+        <p> <i class="fa-brands fa-python" style="color: #FFD43B;"></i> Python programming </p>
+
+        <p> <i class="fa-brands fa-html5" style="color: #FFD43B;"></i> HTML 5 </p>
+
+        <p> <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i> CSS </p>
+
+        <p> 💻 Embedded Systems </p>
+
+        <p> <svg height="15" preserveAspectRatio="xMidYMid" viewBox="0 0 256 256" width="15"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m251.172245 116.593517-111.773492-111.76506398c-6.43232-6.43793736-16.872901-6.43793736-23.313647 0l-23.2097197 23.20971908 29.4426087 29.4426088c6.842415-2.3117025 14.687598-.7612046 20.14243 4.6936272 5.480111 5.4885383 7.019374 13.4011341 4.651494 20.2660201l28.375237 28.3752368c6.864886-2.365071 14.785908-.834235 20.268829 4.657112 7.662606 7.659797 7.662606 20.075017 0 27.740432-7.665415 7.665415-20.080635 7.665415-27.748859 0-5.763807-5.769426-7.187906-14.23537-4.269487-21.336201l-26.462394-26.4623945-.002809 69.6375845c1.867901.926928 3.631873 2.160023 5.187989 3.710521 7.662606 7.659797 7.662606 20.075017 0 27.746049-7.665415 7.662607-20.086252 7.662607-27.740432 0-7.662606-7.671032-7.662606-20.086252 0-27.746049 1.893181-1.890372 4.084102-3.320088 6.421084-4.280723v-70.2864335c-2.336982-.9550168-4.525094-2.3763067-6.421084-4.2807229-5.805941-5.7975142-7.201951-14.3168264-4.227354-21.4457468l-29.0212779-29.0268954-76.64010496 76.6344876c-6.44074623 6.443555-6.44074623 16.884136 0 23.322074l111.77349086 111.767872c6.435129 6.437938 16.872901 6.437938 23.316456 0l111.251042-111.248231c6.437935-6.440746 6.437935-16.886945 0-23.324883"
+                    fill="#de4c36" />
+            </svg> GIT </p>
+
+        <p> <i class="fa-brands fa-github" style="color: #B197FC;"></i> github </p>
+
+        <p> <i class="fa-brands fa-ubuntu"></i> Linux </p>
+
+        <P> <i class="fa-solid fa-microchip" style="color: #FFD43B;"></i> Machine Learning </p>
+
+        <p> <i class="fa-solid fa-file" style="color: #FFD43B;"></i> MS Office </p>
+
+        <p> <i class="fa-solid fa-database"></i> Basic SQL </p>
+
+        <p><i class="fa-solid fa-print" style="color: #B197FC;"></i> MS Office </p>
+
+        <p> <i class="fa-solid fa-code"></i> Visual Studio Code </p>
+
+    </div>
+
+    <!-- Accomplisment_Section -->
+
+    <div class="accom_section">
+
+        <h2> ACCOMP<span class="name_design">LISHMENTS </span> </h2>
+
+        <p> • Collaborated with a dynamic team to develop an advanced <strong>“AI-Enabled Car Parking
+                system”,</strong>
+            Used Python and IBM
+            tools to create it.</p>
+
+        <p> • Combined computer vision and machine learning, using OpenCV as a key tool, the system helps drivers
+            find
+            parking spaces in real-time and makes parking more efficient.</p>
+
+        <p> • Developed a prototype project for <strong>“Automatic fault detection in street lights” </strong>
+            Arduino
+            Uno board, LDR,
+            and ultrasonic sensors.
+        </p>
+
+    </div>
+
+    <!-- Project Demonstration video -->
+
+    <div class="Project_Demonstration_video">
+
+        <h2> Project <span class="name_design">Demonstration</span> video </h2>
+
+        <h4> Watch the video below for an AI-enabled car parking project 👇 </h4>
+
+
+        <video src="./Demo video for AI enabled car parking.mp4" class="video_demo" controls> AI enabled car parking
+            video </video>
+
+    </div>
+
+
+    <!-- Education_Section -->
+
+    <div class="education_section">
+        <div class="education_title">
+            <h1> EDUCATION </h1>
+        </div>
+
+
+        <div class="edu_clg">
+
+            <h3> &#9733; College Qualification</H3>
+
+        </div>
+
+        <div class="edu_p">
+            <p>&#x2022 BE - Electronics and Communication Engineering (2020-2024)</p>
+
+            <p> University College of Engineering, Dindigul (CGPA - 8.19%)</p>
+        </div>
+
+        <div class="edu_sch_t">
+            <h3> &#9733; School Qualification </h3>
+        </div>
+
+
+        <div class="edu_sch">
+            <p>&#x2022 HSC(2019-2020)
+                Seventh Day Adventist Matriculation
+                Higher Secondary School, Dindigul.
+                (CGPA - 63.16%)
+            </p>
+
+            <p>&#x2022 SSLC(2017-2018)
+                Seventh Day Adventist Matriculation
+                Higher Secondary School, Dindigul.
+                (CGPA - 73%)
+            </p>
+        </div>
+
+    </div>
+
+
+    <!--Certificates_Section-->
+
+    <div class="certificate-section">
+        <h2>CERTIFICATES</h2>
+        <h4>Below are the Completed Certificates 👇</h4>
+    
+        <div class="certificate-container">
+            <div class="certificate-card">
+                <img src="./GuviCertification.png" alt="Python Programming Certificate">
+                <p>Python Programming Certificate</p>
+            </div>
+    
+            <div class="certificate-card">
+                <img src="./HTML and CSS.png" alt="HTML and CSS Certificate">
+                <p>HTML 5 and CSS 3 Certificate</p>
+            </div>
+    
+            <div class="certificate-card">
+                <img src="./Final Certificate.jpg" alt="Basic Machine Learning Certificate">
+                <p>Basic Machine Learning Certificate</p>
+            </div>
+    
+            <div class="certificate-card">
+                <img src="./IBM AI car certificate.jpg" alt="AI Enabled Car Parking System Certificate">
+                <p>AI Enabled Car Parking System Certificate</p>
+            </div>
+    
+            <div class="certificate-card">
+                <img src="./Letsupgrade certificate.jpg" alt="HTML and CSS Certificate">
+                <p>HTML and CSS Bootcamp Certificate</p>
+            </div>
+    
+            <div class="certificate-card">
+                <img src="./SQL certificate.jpg" alt="SQL Certificate">
+                <p>Basic SQL Bootcamp Certificate</p>
+            </div>
+    
+            <div class="certificate-card">
+                <img src="./data science.jpg" alt="Data Science Certificate">
+                <p>Basic Data Science Certificate</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollLinks = document.querySelectorAll('.scroll-link');
+
+            scrollLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        setTimeout(() => {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }, 500); // Delay of 0.5 second
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <!-- scroll to top of the page-->
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.onclick = function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
+
+
+
+    <!-- Connect section -->
+
+    <div class="connect" id="connect_page">
+        <div class="connect_title">
+            <h1> Take A <span class="name_design"> Coffee </span> And <span class="name_design"> Chat </span> With Me</h1>
+        </div>
+    </div>
+
+
+    <div class="links_container">
+
+        <div class="linked"><a href="https://www.linkedin.com/in/umaiorubagan-v/"> <i class="fa-brands fa-linkedin"
+                    style="color: #fff;"></i> linkedIn </a></div>
+        <div class="github"><a href="https://github.com/Umaiorubagan08"> <i class="fa-brands fa-github"
+                    style="color: #fff;"></i> GitHub </a></div>
+        <div class="instagram"><a href="https://www.instagram.com/umaiorubagan_v/"><i
+                    class="fa-brands fa-square-instagram" style="color: #fff;"></i> Instagram </a></div>
+        <div class="twitter"><a href="https://twitter.com/UmaiorubaganV"><i class="fa-brands fa-x-twitter"
+                    style="color: #fff;"></i> Twitter </a></div>
+
+    </div>
+
+
+    <!-- bottom -->
+    <div class="footer">
+        <div class="footer_one">
+            <div class="footer_one_s1">
+                <h1> Umaiorubagan </h1>
+                <p> A Frontend focused Web Developer building the Frontend of Websites and Web Applications that
+                    leads
+                    to the success of the overall product</p>
+            </div>
+
+            <div class="footer_one_s2">
+                <h1>SOCIAL MEDIA</h1>
+                <div class="social_icons">
+                    <div class="linked_l"><a href="https://www.linkedin.com/in/umaiorubagan-v/"><i
+                                class="fa-brands fa-linkedin" style="color: #74C0FC;"></i></a></div>
+                    <div class="github_g"><a href="https://github.com/Umaiorubagan08"><i class="fa-brands fa-github"
+                                style="color: #5552ff;"></i></a></div>
+                    <div class="instagram_i"><a href="https://www.instagram.com/umaiorubagan_v/"><i
+                                class="fa-brands fa-instagram" style="color: #bf385c;"></i></a></div>
+                    <div class="twitter_t"><a href="https://twitter.com/UmaiorubaganV"><i class="fa-brands fa-twitter"
+                                style="color: #1da1f2;"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_two">
+
+            <p>&copy; Copyright 2024. Made by Umaiorubagan</p>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
